@@ -47,29 +47,29 @@ This application uses **Shared Schema with Tenant ID** approach for multi-tenanc
 
 ### Authentication
 ```
-POST /api/auth/login         # User login
-GET  /api/auth/profile       # Get current user profile
-POST /api/auth/invite        # Invite user (Admin only)
-PUT  /api/auth/password      # Change password
+POST /api/v1/auth/login         # User login
+GET  /api/v1/auth/profile       # Get current user profile
+POST /api/v1/auth/invite        # Invite user (Admin only)
+PUT  /api/v1/auth/password      # Change password
 ```
 
 ### Notes
 ```
-GET    /api/notes           # List all notes (with pagination, search, filters)
-POST   /api/notes           # Create a new note
-GET    /api/notes/:id       # Get specific note
-PUT    /api/notes/:id       # Update note (own notes + admin can edit any)
-DELETE /api/notes/:id       # Delete note (own notes + admin can delete any)
-GET    /api/notes/stats     # Get notes statistics
+GET    /api/v1/notes           # List all notes (with pagination, search, filters)
+POST   /api/v1/notes           # Create a new note
+GET    /api/v1/notes/:id       # Get specific note
+PUT    /api/v1/notes/:id       # Update note (own notes + admin can edit any)
+DELETE /api/v1/notes/:id       # Delete note (own notes + admin can delete any)
+GET    /api/v1/notes/stats     # Get notes statistics
 ```
 
 ### Tenants
 ```
-GET    /api/tenants/:slug              # Get tenant information
-POST   /api/tenants/:slug/upgrade      # Upgrade to Pro plan (Admin only)
-GET    /api/tenants/:slug/users        # List tenant users (Admin only)
-PUT    /api/tenants/:slug/users/:id/role  # Update user role (Admin only)
-DELETE /api/tenants/:slug/users/:id    # Deactivate user (Admin only)
+GET    /api/v1/tenants/:slug              # Get tenant information
+POST   /api/v1/tenants/:slug/upgrade      # Upgrade to Pro plan (Admin only)
+GET    /api/v1/tenants/:slug/users        # List tenant users (Admin only)
+PUT    /api/v1/tenants/:slug/users/:id/role  # Update user role (Admin only)
+DELETE /api/v1/tenants/:slug/users/:id    # Deactivate user (Admin only)
 ```
 
 ### Health Check
@@ -100,7 +100,7 @@ The following test accounts are available (password: `password`):
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd notes-saas-backend
+   cd saasproject
    ```
 
 2. **Install dependencies**
