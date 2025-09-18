@@ -163,7 +163,7 @@ const inviteUser = async (req, res) => {
       success: true,
       message: "User invited successfully",
       user: userResponse,
-      defaultPassword: "password", // In real app, send via email
+      defaultPassword: "password",
     });
   } catch (error) {
     console.error("Invite user error:", error);
