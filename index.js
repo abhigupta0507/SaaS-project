@@ -27,7 +27,7 @@ const corsOptions = {
   origin: [
     "http://localhost:3000",
     "https://localhost:3000",
-    process.env.FRONTEND_URL,
+    "https://notesappfrontend-1jgl.vercel.app"
     // Add your Vercel frontend URL here when deployed
   ],
   credentials: true,
